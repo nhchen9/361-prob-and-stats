@@ -43,9 +43,11 @@ while(resolvedyet == 0)
   turns++;
   lands(1) = lands(1) + lands(2);
   lands(2) = 0;
+  if(turns > 1)
   d= draw(deck, hand);
   hand(d)++;
   deck(d)--;
+  endif
   if( hand(1) > 0)
     hand(1) --;
     lands(1) ++;
