@@ -14,6 +14,9 @@ factorial(2.4)
 for ( x in c(1:10)){
   print(runif(1,0,1))
 }
+x = c()
+for (i in c(1:20))
+  x <- c(x,runif(1))
 
 #pi is initial state probability distribution
 # use runif - random uniform
